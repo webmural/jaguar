@@ -1,9 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
-  font-size: max(20pt, 2vw);
-} 
+  font-family: sans-serif;
+  font-size: max(3ch, 3vmax);
+}
+
+body {
+  margin: 2em auto;
+  padding: 1em;
+  overflow-wrap: anywhere;
+}
 
 :focus {
-  outline-style: dotted;
-  outline-width: thick;
-  outline-color: currentColor;
+  outline: 1em dotted;
+}
+
+.ette {
+  margin: 0;
+  max-width: 10em;
+}
+
+a {
+  border: 1em dotted;
+  border-radius: 100%;
+  box-shadow: 0 0 1ch 1ch;
+  min-height: 8ch;
+  padding: 1ch;
+  float: right;
+  display: table;
+  margin: 1em;
+}
+
+a:nth-child(odd) {
+  margin-top: 2em;
+}
+
+header {
+  float: left;
+  margin-block-end: 1em;
+  margin-inline-end: 1em;
+}
+
+h1 {
+  font-weight: inherit;
+  margin: 0;
 }
